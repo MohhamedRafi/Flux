@@ -1,17 +1,17 @@
-﻿#include "math/vec3.h" 
+﻿#include "math/matrix3.h"
+#include "math/vec3.h"
 #include <iostream>
 
 int main() {
 	using namespace std;
 	using namespace flux;
 
-	vec3 v(1, 2, 3);
-	vec3 v2(2, 1, 3);
+	float arr[3][3] = {{0,1,2}, {1,2,3}, {3,4,5}};
+	matrix3 m(arr);
 
-	if (v == v2) {
-		cout << v << endl;
-	}
-	else {
-		cout << v << v2 << endl;
-	}
+	cout << m << endl;
+	cout << m * m << endl;
+	cout << m + m << endl;
+	cout << m - m << endl;
+	cout << 2 * m << endl;
 }

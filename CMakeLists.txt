@@ -10,6 +10,7 @@ project ("Flux")
 # define library target, and includes headers
 add_library(fluxlib STATIC	include/math/vec3.h
 							include/math/matrix3.h
+							include/math/mconstants.h
 
 
 							src/math/vec3.cpp

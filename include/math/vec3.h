@@ -1,3 +1,4 @@
+#pragma once
 #include <cmath>
 #include <ostream>
 
@@ -47,4 +48,6 @@ namespace flux {
 	private:
 		float m_vec[3];
 	};
+
+	vec3 operator*(float b, const vec3& a);
 }

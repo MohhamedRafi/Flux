@@ -75,4 +75,8 @@ namespace flux {
 		os << "(" << b.x() << "," << b.y() << "," << b.z() << ")";
 		return os;
 	}
+
+	vec3 flux::operator*(float b, const vec3& a) {
+		return vec3::scale(a, b);
+	}
 }
