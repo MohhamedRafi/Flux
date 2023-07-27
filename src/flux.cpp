@@ -6,12 +6,6 @@ int main() {
 	using namespace std;
 	using namespace flux;
 
-	float arr[3][3] = {{0,1,2}, {1,2,3}, {3,4,5}};
-	matrix3 m(arr);
-
-	cout << m << endl;
-	cout << m * m << endl;
-	cout << m + m << endl;
-	cout << m - m << endl;
-	cout << 2 * m << endl;
+	matrix3 m { {0,1,2}, {1,2,3}, {3,4,5} };
+	matrix3 q { {0,1,2}, {1,2,3}, {3,4,5} };
 }

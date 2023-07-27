@@ -1,11 +1,13 @@
 #pragma once
 #include <cmath>
 #include <ostream>
+#include <initializer_list>
 
 namespace flux {
 	class vec3 {
 	public:
 		vec3();
+		vec3(const std::initializer_list<float>& list);
 		vec3(float x, float y, float z);
 		vec3(const vec3& v);
 
@@ -46,7 +48,7 @@ namespace flux {
 		friend std::ostream& operator<<(std::ostream& os, const vec3& b);
 
 	private:
-		float m_vec[3];
+		float m_arr[3];
 	};
 
 	vec3 operator*(float b, const vec3& a);
